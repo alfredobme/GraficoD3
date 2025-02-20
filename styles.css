@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+label {
+    font-weight: bold;   
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+#data-input {
+    padding: 8px;
+    width: 200px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#chart {
+    margin-top: 20px;
+}
+
+#update-data{
+    background-color: #58c2dd;
+    border-radius: 5px;
+    border: none;
+    width: 100px;
+    height: 30px;
+}
+
+.bar {
+    fill: steelblue;
+}
