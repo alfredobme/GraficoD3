@@ -23,10 +23,10 @@ document.getElementById('update-data').addEventListener('click', function() {
 
 function updateChart(data) {
     const colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd']; 
-    const svgWidth = 500;
+    const svgWidth = 700;
     const barHeight = 30;
     const barPadding = 5;
-    const chartHeight = data.length * (barHeight + barPadding); // Altura total del gráfico
+    const chartHeight = data.length * (barHeight + barPadding);
 
     // Limpiar el gráfico anterior
     d3.select('#chart').html('');
@@ -34,7 +34,7 @@ function updateChart(data) {
     // Crear el contenedor del SVG con barra de desplazamiento
     const chartContainer = d3.select('#chart')
         .style('width', svgWidth + 'px')
-        .style('height', '500px')
+        .style('height', '600px')
         .style('overflow-y', 'auto');
 
     // Crear el SVG dentro del contenedor
@@ -65,9 +65,11 @@ function updateChart(data) {
         .enter()
         .append('text')
         .text(d => d)
-        .attr('x', d => xScale(d) - 20)
+        .attr('x', d => xScale(d) -5)
         .attr('y', (d, i) => i * (barHeight + barPadding) + barHeight / 2)
         .attr('dy', '0.35em')
-        .attr('fill', 'black')
-        .style('font-size', '12px');
+        .attr('fill', 'black' )
+        .style('font-size', '12px')
+        .style('font-weight', 'bold')
+        .style('text-anchor', 'end');
 }

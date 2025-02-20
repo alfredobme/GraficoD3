@@ -21,10 +21,6 @@ label {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.input-section {
-    margin-bottom: 20px;
-}
-
 #data-input {
     padding: 8px;
     width: 200px;
@@ -46,4 +42,36 @@ label {
 
 .bar {
     fill: steelblue;
+}
+
+.input-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.input-section label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.input-section input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.input-section button {
+    background-color: #29a3ef;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
 }
